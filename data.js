@@ -3,23 +3,22 @@ const defaultProfile = {
 
   name: "Amy Lobo",
   title: "Java Full Stack Developer",
-  tagline: "Estudiante de Administración en transición hacia el desarrollo de software.",
+  tagline: "Enfoque en el desarrollo de soluciones web.",
   email: "lobo.samperio.amy@gmail.com",
   phone: "+52 (55) 4321-9876",
   location: "México / Remoto",
   timezone: "GMT-6 (CDMX)",
-  availability: "En formación & disponible para proyectos",
-  githubUrl: "https://github.com",
-  linkedinUrl: "https://linkedin.com",
-  // 👉 Pega aquí el link de tu CV (Google Drive, PDF, etc.) para que aparezca el botón "Abrir mi CV"
-  cvUrl: "",
+  availability: "Open to Work",
+  githubUrl: "https://github.com/AmyLobo",
+  linkedinUrl: "www.linkedin.com/in/amy-lobo-s",
+  cvUrl: "https://drive.google.com/file/d/13znzhbndpoI-VTjEoBkiTodKTNRf9k63/view?usp=sharing",
   githubUsername: "amylobo-dev",
   linkedinUsername: "amy-lobo-samperio",
-  bioLong: "Soy estudiante de Administración en transición hacia el desarrollo de software. Actualmente me estoy formando como Java Full Stack Developer, desarrollando habilidades en frontend, backend, bases de datos y metodologías ágiles. Me interesa crear soluciones funcionales y fáciles de usar, combinando mi formación en negocios con mis conocimientos en tecnología.",
-  bioP1: "Soy estudiante de Administración en transición hacia el desarrollo de software. Actualmente me estoy formando como Java Full Stack Developer, desarrollando habilidades en frontend, backend, bases de datos y metodologías ágiles.",
-  bioP2: "Me interesa crear soluciones funcionales y fáciles de usar, combinando mi formación en negocios con mis conocimientos en tecnología.",
-  quote: "Crear soluciones funcionales y fáciles de usar, combinando mi visión de negocios con tecnología.",
-  formation: "Administración",
+  bioLong: "Soy Java Full Stack Developer con enfoque en el desarrollo de soluciones web funcionales y centradas en las necesidades del usuario. Trabajo con tecnologías como Java, Spring Boot, JavaScript, SQL, HTML y CSS, aplicando metodologías ágiles y herramientas como Git y GitHub en proyectos individuales y colaborativos. Mi formación en Administración complementa mi perfil técnico con una visión orientada a procesos, organización y necesidades de negocio.", 
+  bioP1: "Soy Java Full Stack Developer con enfoque en el desarrollo de soluciones web funcionales y centradas en las necesidades del usuario.", 
+  bioP2: "Trabajo con tecnologías como Java, Spring Boot, JavaScript, SQL, HTML y CSS, aplicando metodologías ágiles y herramientas como Git y GitHub en proyectos individuales y colaborativos.", 
+  quote: "Desarrollar soluciones funcionales combinando tecnología, visión de negocio y enfoque en el usuario.", 
+  formation: "Administración", 
   specialization: "Java Full Stack Development",
   inProgressSkills: ["Java", "Spring Boot", "SQL", "JavaScript"]
 };
@@ -51,7 +50,7 @@ const sectionsList = [
     iconName: 'award',
     side: 'left',
     badge: '2026',
-    description: 'Credenciales en Java, Python y formación intensiva Full Stack.'
+    description: 'Formación intensiva Full Stack y cursos.'
   },
   {
     id: 'mini-cv',
@@ -67,7 +66,7 @@ const sectionsList = [
   {
     id: 'proyectos',
     title: 'Proyectos',
-    subtitle: 'Keso Javahots, SportZone & EventEase',
+    subtitle: 'Keso Pastelería, Synapse & Más',
     iconName: 'folder-git-2',
     side: 'right',
     badge: 'Casos reales',
@@ -150,31 +149,30 @@ const skillsData = [
 const certificationsData = [
   {
     id: "cert-java-beginner",
-    title: "Java Beginner",
-    issuer: "Certificación",
+    title: "Introducción a Java, Java I, Java II",
+    issuer: "Learning to Earning",
     issueDate: "2026",
-    credentialId: "CERT-JAVA-2026",
-    credentialUrl: "https://github.com",
+    /*credentialId: "CERT-JAVA-2026",
+    credentialUrl: "https://github.com",*/
     skills: ["Java", "OOP", "Lógica de Programación"],
     description: "Certificación en fundamentos esenciales del lenguaje Java, programación orientada a objetos y estructuras.",
   },
   {
     id: "cert-python-beginner",
     title: "Python Beginner",
-    issuer: "Certificación",
+    issuer: "Santander Open Academy",
     issueDate: "2026",
-    credentialId: "CERT-PY-2026",
-    credentialUrl: "https://github.com",
+    /*credentialUrl: "https://github.com",*/
     skills: ["Python", "Sintaxis", "Control de Flujo"],
     description: "Certificación introductoria en programación con Python, tipos de datos y estructuras de control.",
   },
   {
     id: "cert-generation-fullstack",
-    title: "Java Full Stack Developer",
+    title: "Java Full Stack Developer Jr.",
     issuer: "Generation México",
     issueDate: "2026",
-    credentialId: "GEN-MX-JAVA-2026",
-    credentialUrl: "https://mexico.generation.org",
+    /*credentialId: "GEN-MX-JAVA-2026",
+    credentialUrl: "https://mexico.generation.org",*/
     skills: ["Java", "Spring Boot", "SQL", "JavaScript", "HTML/CSS", "Bootstrap", "Git", "Scrum"],
     description: "Programa intensivo de formación técnica integral en desarrollo Full Stack con Java, bases de datos y habilidades blandas.",
   }
@@ -183,14 +181,14 @@ const certificationsData = [
 const projectsData = [
   {
     id: "proj-keso-javahots",
-    title: "Keso Javahots",
+    title: "Keso Pastelería",
     tagline: "Proyecto web colaborativo con navegación responsiva y control de versiones",
     category: "Frontend",
     featured: true,
     emoji: "🧀",
     description: "Una plataforma web desarrollada en equipo, donde trabajé en aspectos clave de frontend, diseño responsive y sistema de navegación interactivo.",
     myContribution: [
-      "Desarrollo y ajustes del navbar.",
+      "Colaboré en el desarrollo y ajustes del navbar, trabajando en conjunto con el equipo para mejorar su diseño y comportamiento responsive.",
       "Diseño responsive adaptado a múltiples resoluciones.",
       "Integración y resolución de conflictos con Git.",
       "Trabajo colaborativo mediante ramas."
@@ -198,18 +196,18 @@ const projectsData = [
     technologies: ["HTML", "CSS", "JavaScript", "Bootstrap", "Git", "GitHub"],
     githubUrl: "https://github.com",
     liveUrl: "https://example.com",
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&auto=format&fit=crop&q=80",
+    image: "logo.jpeg",
   },
   {
     id: "proj-sportzone",
-    title: "SportZone",
+    title: "Synapse",
     tagline: "Proyecto de Hackathon para plataforma deportiva",
     category: "Hackathon",
     featured: true,
     emoji: "🏆",
-    description: "Proyecto desarrollado en equipo durante un hackathon, enfocado en brindar una experiencia visual dinámica para deportistas y aficionados.",
+    description: "Proyecto desarrollado en equipo durante un hackathon, enfocado en brindar una experiencia visual dinámica para deportistas.",
     myContribution: [
-      "Desarrollo de la landing page.",
+      "Colaboré en el desarrollo de la landing page, encargándome del navbar, footer y la sección “Nosotros”.",
       "Implementación de diseño responsive.",
       "Trabajo con Git/GitHub.",
       "Colaboración bajo metodología Scrum."
@@ -217,24 +215,22 @@ const projectsData = [
     technologies: ["HTML", "CSS", "JavaScript", "Bootstrap", "Figma", "Scrum"],
     githubUrl: "https://github.com",
     liveUrl: "https://example.com",
-    image: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=800&auto=format&fit=crop&q=80",
+    image: "Identidad visual Synapse Sport Store.png",
   },
   {
-    id: "proj-eventease",
-    title: "EventEase",
-    tagline: "Plataforma orientada a la gestión de eventos",
+    id: "",
+    title: "",
+    tagline: "",
     category: "Fullstack",
     featured: true,
-    emoji: "📱",
-    description: "Plataforma orientada a la gestión y organización de eventos, diseñada para simplificar el registro, control de asistentes y administración.",
+    emoji: "",
+    description: "",
     myContribution: [
-      "Participación en la lógica y módulos de gestión.",
-      "Diseño de interfaz amigable y flujo intuitivo de usuario.",
-      "Implementación con tecnologías Java, Spring Boot y SQL."
+      ""
     ],
-    technologies: ["Java", "Spring Boot", "HTML", "CSS", "JavaScript", "SQL"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
-    image: "https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&auto=format&fit=crop&q=80",
+    technologies: [""],
+    githubUrl: "",
+    liveUrl: "",
+    image: "",
   }
 ];

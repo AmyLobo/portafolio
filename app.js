@@ -173,7 +173,7 @@ function renderAboutSection() {
                 <span class="tag-active">En formación activa</span>
               </div>
               <p class="about-role">${p.title}</p>
-              <p class="about-loc">${p.location} • Transición tecnológica hacia el desarrollo Full Stack</p>
+              <p class="about-loc">${p.location}
             </div>
           </div>
           <div class="about-actions">
@@ -191,7 +191,7 @@ function renderAboutSection() {
       </div>
 
       <div>
-        <div class="mini-data-header">${icon('sparkles')}<span>Datos Clave</span></div>
+        <div class="mini-data-header">${icon('sparkles')}<span></span></div>
         <div class="cards-grid cols-3">
           <div class="data-card">
             <div class="data-card-top">
@@ -228,8 +228,8 @@ function renderAboutSection() {
 
       <div class="cta-banner">
         <div>
-          <h4 class="cta-title">${icon('briefcase')}¿Quieres ver cómo aplico estos conocimientos?</h4>
-          <p class="cta-text">Explora mis proyectos colaborativos y de hackathon con la descripción detallada de lo que construí.</p>
+          <h4 class="cta-title">${icon('briefcase')}Conoce mis proyectos</h4>
+          <p class="cta-text">Explora mis proyectos y conoce mi participación, las tecnologías utilizadas y el resultado de cada uno.</p>
         </div>
         <button id="cta-proyectos-btn" class="btn-primary" style="flex-shrink:0;">
           <span>Ver Proyectos</span>${icon('arrow-right')}
@@ -257,7 +257,7 @@ function renderSkillsSection() {
     <div class="section-space">
       <div class="panel panel-header">
         <h2 class="section-title">${icon('cpu')}Habilidades &amp; Tecnologías</h2>
-        <p class="section-subtitle">Organización clara del stack técnico con el que he desarrollado proyectos, sin listas saturadas.</p>
+       
       </div>
 
       <div class="cards-grid cols-3">
@@ -284,7 +284,7 @@ function renderSkillsSection() {
 
       <div class="note-panel">
         ${icon('sparkles')}
-        <p><strong>Enfoque práctico:</strong> Cada una de estas tecnologías y herramientas ha sido aplicada en la resolución de problemas reales, trabajo colaborativo en equipo y desarrollo de interfaces intuitivas.</p>
+        <p><strong>Cada una de estas tecnologías y herramientas ha sido aplicada en la resolución de problemas reales, trabajo colaborativo en equipo y desarrollo de interfaces intuitivas.</strong> </p>
       </div>
     </div>
   `;
@@ -349,7 +349,7 @@ function renderMiniCvSection() {
       <div class="panel panel-header header-row">
         <div>
           <h2 class="section-title">${icon('file-text')}Curriculum Vitae</h2>
-          <p class="section-subtitle">Resumen profesional y enlace directo a mi documento de CV.</p>
+          <p class="section-subtitle">Enlace a mi CV completo.</p>
         </div>
         ${cvUrl ? `
           <div class="cv-action-bar">
@@ -379,14 +379,14 @@ function renderMiniCvSection() {
           <h3 class="cv-section-heading">${icon('graduation-cap')}Formación Académica &amp; Certificaciones</h3>
           <div class="cv-edu-grid">
             <div class="cv-mini-card">
-              <span class="tag-year">En curso</span>
+              <span class="tag-year">En proceso de titulación</span>
               <h4>Licenciatura en Administración</h4>
-              <p>Universidad • Visión de procesos y negocios</p>
+              <p>UNAM FCA • Visión de procesos y negocios</p>
             </div>
             <div class="cv-mini-card">
-              <span class="tag-year emerald">2026</span>
+              <span class="tag-year emerald">Octubre 2026</span>
               <h4>Java Full Stack Developer</h4>
-              <p>Generation México • Formación intensiva práctica</p>
+              <p>Generation México • Formación intensiva de habilidades blandas y técnicas</p>
             </div>
           </div>
         </div>
@@ -415,7 +415,7 @@ function renderMiniCvSection() {
         <div>
           <h3 class="cv-section-heading">${icon('code')}Competencias Técnicas</h3>
           <div class="cv-skills-grid">
-            <div class="cv-mini-card"><strong>Backend &amp; SQL:</strong><p>Java, Spring Boot, SQL</p></div>
+            <div class="cv-mini-card"><strong>Backend &amp; SQL:</strong><p>Java, Spring BootL</p></div>
             <div class="cv-mini-card"><strong>Frontend:</strong><p>HTML, CSS, JavaScript, Bootstrap</p></div>
             <div class="cv-mini-card"><strong>Herramientas &amp; Ágil:</strong><p>Git, GitHub, VS Code, Figma, Scrum</p></div>
           </div>
@@ -546,10 +546,6 @@ function renderGithubSection() {
         <a id="open-github-direct" href="${githubUrl.startsWith('http') ? githubUrl : 'https://' + githubUrl}" target="_blank" rel="noreferrer" class="btn-link-primary github">
           ${icon('github')}<span>Abrir mi GitHub</span>${icon('external-link')}
         </a>
-        <div class="url-config">
-          <div class="url-config-row">${icon('link')}<span>Enlace configurado: <strong id="github-url-display">${githubUrl}</strong></span></div>
-          <div id="github-editor-slot">
-            <button id="github-edit-toggle" class="link-edit-toggle">Cambiar URL de mi perfil</button>
           </div>
         </div>
       </div>
@@ -557,9 +553,8 @@ function renderGithubSection() {
       <div class="link-info-panel">
         <h3 class="link-info-title">${icon('folder-git-2')}Repositorios Principales en mi perfil</h3>
         <div class="repo-grid">
-          <div class="repo-item"><span class="name">🧀 Keso Javahots</span><span class="desc">Trabajo colaborativo Git &amp; ramas</span></div>
-          <div class="repo-item"><span class="name">🏆 SportZone</span><span class="desc">Hackathon con Scrum</span></div>
-          <div class="repo-item"><span class="name">📱 EventEase</span><span class="desc">Full Stack Java &amp; SQL</span></div>
+          <div class="repo-item"><span class="name">🧀 Keso pastelería</span><span class="desc">Trabajo colaborativo Git &amp; ramas</span></div>
+          <div class="repo-item"><span class="name">🏆 Synapse</span><span class="desc">Hackathon con Scrum</span></div>
         </div>
       </div>
     </div>
@@ -583,17 +578,13 @@ function renderLinkedinSection() {
         <a id="open-linkedin-direct" href="${linkedinUrl.startsWith('http') ? linkedinUrl : 'https://' + linkedinUrl}" target="_blank" rel="noreferrer" class="btn-link-primary linkedin">
           ${icon('linkedin')}<span>Abrir mi LinkedIn</span>${icon('external-link')}
         </a>
-        <div class="url-config">
-          <div class="url-config-row">${icon('link')}<span>Enlace configurado: <strong id="linkedin-url-display">${linkedinUrl}</strong></span></div>
-          <div id="linkedin-editor-slot">
-            <button id="linkedin-edit-toggle" class="link-edit-toggle">Cambiar URL de mi perfil</button>
           </div>
         </div>
       </div>
 
       <div class="link-info-panel">
         <h3 class="link-info-title">${icon('check-circle-2')}Perfil Profesional Actualizado</h3>
-        <p>Estudiante de Administración en transición hacia el desarrollo de software como Java Full Stack Developer. Abierta a conversar sobre proyectos y oportunidades.</p>
+        <p>Experiencia en desarrollo web con Java, SQL, JavaScript, HTML, CSS y Git. Interesada en desarrollar soluciones funcionales y crecer profesionalmente en tecnología.</p>
       </div>
     </div>
   `;
@@ -608,8 +599,8 @@ function renderContactSection() {
   return `
     <div class="section-space">
       <div class="panel panel-header">
-        <h2 class="section-title">${icon('mail')}Hablemos de tu Próximo Proyecto</h2>
-        <p class="section-subtitle">¿Tienes una idea, propuesta laboral o colaboración? Escríbeme y responderé en menos de 24 horas.</p>
+        <h2 class="section-title">${icon('mail')}Pongámonos en contacto</h2>
+        <p class="section-subtitle">¿Tienes una oportunidad laboral, proyecto o simplemente quieres conocer más sobre mi trabajo? Será un gusto leerte.</p>
       </div>
 
       <div class="contact-grid">
@@ -637,12 +628,6 @@ function renderContactSection() {
               </div>
               <span class="channel-tz">${p.timezone}</span>
             </div>
-            <div class="channel-item channel-availability">
-              <span class="status-dot"></span>
-              <div>
-                <strong>Disponibilidad Inmediata</strong>
-                <span class="sub">Abierta a ofertas freelance y posiciones a tiempo completo.</span>
-              </div>
             </div>
           </div>
         </div>
@@ -666,11 +651,11 @@ function renderContactForm() {
       </div>
       <div class="form-field" style="margin-top:1rem;">
         <label>Asunto</label>
-        <input type="text" id="contact-subject-input" placeholder="Ej. Propuesta de desarrollo Frontend / Consultoría UI" />
+        <input type="text" id="contact-subject-input" placeholder="Ej. Oportunidad laboral / Desarrollo web" />
       </div>
       <div class="form-field" style="margin-top:1rem;">
         <label>Mensaje <span class="req">*</span></label>
-        <textarea id="contact-message-input" required rows="4" placeholder="Cuéntame sobre tu proyecto, objetivos o tiempos esperados..."></textarea>
+        <textarea id="contact-message-input" required rows="4" placeholder="Escribe tu mensaje..."></textarea>
       </div>
       <button id="submit-contact-btn" type="submit" class="btn-submit" style="margin-top:1.25rem;">
         <span>Enviar Mensaje</span>${icon('send')}
