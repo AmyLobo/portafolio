@@ -133,7 +133,7 @@ a {
 /* ============================================================
    IMAGEN DE FONDO*/
 #portfolio-viewport {
-  background-image: linear-gradient(rgba(10,10,10,0.55), rgba(10,10,10,0.55)), url('/user32212-trevi-1921687.jpg');
+  background-image: linear-gradient(rgba(10,10,10,0.55), rgba(10,10,10,0.55)), url('./user32212-trevi-1921687.jpg');
   background-size: cover;
   background-position: center;
 }
