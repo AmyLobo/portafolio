@@ -1,7 +1,4 @@
-/* ============================================
-   Amy Lobo — Portafolio
-   Hoja de estilos principal (conversión desde Tailwind/React)
-   ============================================ */
+
 
 :root {
   /* Paleta cálida / editorial romántica */
@@ -29,7 +26,7 @@
   --text-warm-5: #b8a792;
   --text-warm-6: #b3a18a;
   --text-warm-7: #a8957f;
-  --text-warm-8: #c7b59d;
+  --text-warm-8: hsl(188, 97%, 77%);
   --text-muted: #8a7968;
   --text-faint: #665747;
 

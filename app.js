@@ -82,7 +82,7 @@ function renderHome() {
   // El nombre se muestra tal cual está escrito en js/data.js (defaultProfile.name)
   document.getElementById('home-center-name').textContent = state.profile.name;
   document.getElementById('home-center-title').textContent = state.profile.title;
-  document.getElementById('home-center-location').textContent = `${state.profile.location} • Transición Tecnológica`;
+  document.getElementById('home-center-location').textContent = `${state.profile.location} `;
 
   document.querySelectorAll('.nav-card').forEach(btn => {
     btn.addEventListener('click', () => goToSection(btn.dataset.section));
@@ -195,7 +195,7 @@ function renderAboutSection() {
         <div class="cards-grid cols-3">
           <div class="data-card">
             <div class="data-card-top">
-              <div class="icon-badge" style="background:rgba(251,191,36,0.15); border:1px solid rgba(252,211,77,0.3); color:#fcd34d;"></div>
+              <div class="icon-badge" style="background:rgba(251,191,36,0.15); border:1px solid rgba(252,211,77,0.3); color:#fcd34d;">    ${icon('briefcase-business')}</div>
               <div>
                 <span class="data-card-label">Formación</span>
                 <h4 class="data-card-value">${p.formation}</h4>
@@ -205,7 +205,7 @@ function renderAboutSection() {
           </div>
           <div class="data-card">
             <div class="data-card-top">
-              <div class="icon-badge" style="background:rgba(16,185,129,0.15); border:1px solid rgba(52,211,153,0.3); color:#6ee7b7;"></div>
+              <div class="icon-badge" style="background:rgba(16,185,129,0.15); border:1px solid rgba(52,211,153,0.3); color:#6ee7b7;">${icon('code-2')}</div>
               <div>
                 <span class="data-card-label">Especialización actual</span>
                 <h4 class="data-card-value">${p.specialization}</h4>
@@ -215,7 +215,7 @@ function renderAboutSection() {
           </div>
           <div class="data-card">
             <div class="data-card-top">
-              <div class="icon-badge" style="background:rgba(223,181,123,0.2); border:1px solid rgba(223,181,123,0.4); color:#fde68a;"></div>
+              <div class="icon-badge" style="background:rgba(223,181,123,0.2); border:1px solid rgba(223,181,123,0.4); color:#fde68a;"> ${icon('layers-3')}</div>
               <div>
                 <span class="data-card-label">En desarrollo</span>
                 <h4 class="data-card-value" style="font-size:0.875rem;">${p.inProgressSkills.join(' · ')}</h4>
