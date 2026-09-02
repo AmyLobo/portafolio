@@ -11,8 +11,8 @@ const SECTION_ICONS = {
   'cursos': 'award',
   'mini-cv': 'file-text',
   'proyectos': 'folder-git-2',
-  'github': 'github',
-  'linkedin': 'linkedin',
+  'github': 'code',
+  'linkedin': 'briefcase-business',
   'contacto': 'mail'
 };
 
@@ -195,7 +195,7 @@ function renderAboutSection() {
         <div class="cards-grid cols-3">
           <div class="data-card">
             <div class="data-card-top">
-              <div class="icon-badge" style="background:rgba(251,191,36,0.15); border:1px solid rgba(252,211,77,0.3); color:#fcd34d;">🎓</div>
+              <div class="icon-badge" style="background:rgba(251,191,36,0.15); border:1px solid rgba(252,211,77,0.3); color:#fcd34d;"></div>
               <div>
                 <span class="data-card-label">Formación</span>
                 <h4 class="data-card-value">${p.formation}</h4>
@@ -205,7 +205,7 @@ function renderAboutSection() {
           </div>
           <div class="data-card">
             <div class="data-card-top">
-              <div class="icon-badge" style="background:rgba(16,185,129,0.15); border:1px solid rgba(52,211,153,0.3); color:#6ee7b7;">💻</div>
+              <div class="icon-badge" style="background:rgba(16,185,129,0.15); border:1px solid rgba(52,211,153,0.3); color:#6ee7b7;"></div>
               <div>
                 <span class="data-card-label">Especialización actual</span>
                 <h4 class="data-card-value">${p.specialization}</h4>
@@ -215,7 +215,7 @@ function renderAboutSection() {
           </div>
           <div class="data-card">
             <div class="data-card-top">
-              <div class="icon-badge" style="background:rgba(223,181,123,0.2); border:1px solid rgba(223,181,123,0.4); color:#fde68a;">🌱</div>
+              <div class="icon-badge" style="background:rgba(223,181,123,0.2); border:1px solid rgba(223,181,123,0.4); color:#fde68a;"></div>
               <div>
                 <span class="data-card-label">En desarrollo</span>
                 <h4 class="data-card-value" style="font-size:0.875rem;">${p.inProgressSkills.join(' · ')}</h4>
@@ -538,13 +538,13 @@ function renderGithubSection() {
   return `
     <div class="link-section">
       <div class="link-hero">
-        <div class="link-hero-icon github">${icon('github')}</div>
+        <div class="link-hero-icon github">${icon('code')}</div>
         <div>
           <h2 class="link-hero-title">Perfil de GitHub</h2>
           <p class="link-hero-desc">Accede directamente a mis repositorios, código fuente de proyectos colaborativos y control de versiones.</p>
         </div>
         <a id="open-github-direct" href="${githubUrl.startsWith('http') ? githubUrl : 'https://' + githubUrl}" target="_blank" rel="noreferrer" class="btn-link-primary github">
-          ${icon('github')}<span>Abrir mi GitHub</span>${icon('external-link')}
+          ${icon('code')}<span>Abrir mi GitHub</span>${icon('external-link')}
         </a>
           </div>
         </div>
@@ -553,8 +553,8 @@ function renderGithubSection() {
       <div class="link-info-panel">
         <h3 class="link-info-title">${icon('folder-git-2')}Repositorios Principales en mi perfil</h3>
         <div class="repo-grid">
-          <div class="repo-item"><span class="name">🧀 Keso pastelería</span><span class="desc">Trabajo colaborativo Git &amp; ramas</span></div>
-          <div class="repo-item"><span class="name">🏆 Synapse</span><span class="desc">Hackathon con Scrum</span></div>
+          <div class="repo-item"><span class="name"> Keso pastelería</span><span class="desc">Trabajo colaborativo Git &amp; ramas</span></div>
+          <div class="repo-item"><span class="name"> Synapse</span><span class="desc">Hackathon con Scrum</span></div>
         </div>
       </div>
     </div>
@@ -570,13 +570,13 @@ function renderLinkedinSection() {
   return `
     <div class="link-section">
       <div class="link-hero">
-        <div class="link-hero-icon linkedin">${icon('linkedin')}</div>
+        <div class="link-hero-icon linkedin">${icon('briefcase-business')}</div>
         <div>
           <h2 class="link-hero-title">Perfil de LinkedIn</h2>
           <p class="link-hero-desc">Conecta conmigo en LinkedIn para networking profesional, oportunidades laborales y colaboraciones.</p>
         </div>
         <a id="open-linkedin-direct" href="${linkedinUrl.startsWith('http') ? linkedinUrl : 'https://' + linkedinUrl}" target="_blank" rel="noreferrer" class="btn-link-primary linkedin">
-          ${icon('linkedin')}<span>Abrir mi LinkedIn</span>${icon('external-link')}
+          ${icon('briefcase-business')}<span>Abrir mi LinkedIn</span>${icon('external-link')}
         </a>
           </div>
         </div>

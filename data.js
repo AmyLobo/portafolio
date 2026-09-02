@@ -76,7 +76,7 @@ const sectionsList = [
     id: 'github',
     title: 'GitHub',
     subtitle: 'Repositorios & Enlace a perfil',
-    iconName: 'github',
+    iconName: 'code',
     side: 'right',
     badge: 'Código',
     description: 'Enlace directo a mi perfil de GitHub con repositorios de mis proyectos.'
@@ -85,7 +85,7 @@ const sectionsList = [
     id: 'linkedin',
     title: 'LinkedIn',
     subtitle: 'Perfil profesional & Networking',
-    iconName: 'linkedin',
+    iconName: 'briefcase-business',
     side: 'right',
     badge: 'Conectar',
     description: 'Enlace directo a mi red profesional de LinkedIn para conectar y charlar.'
@@ -185,7 +185,7 @@ const projectsData = [
     tagline: "Proyecto web colaborativo con navegación responsiva y control de versiones",
     category: "Frontend",
     featured: true,
-    emoji: "🧀",
+    emoji: "",
     description: "Una plataforma web desarrollada en equipo, donde trabajé en aspectos clave de frontend, diseño responsive y sistema de navegación interactivo.",
     myContribution: [
       "Colaboré en el desarrollo y ajustes del navbar, trabajando en conjunto con el equipo para mejorar su diseño y comportamiento responsive.",
@@ -204,7 +204,7 @@ const projectsData = [
     tagline: "Proyecto de Hackathon para plataforma deportiva",
     category: "Hackathon",
     featured: true,
-    emoji: "🏆",
+    emoji: "",
     description: "Proyecto desarrollado en equipo durante un hackathon, enfocado en brindar una experiencia visual dinámica para deportistas.",
     myContribution: [
       "Colaboré en el desarrollo de la landing page, encargándome del navbar, footer y la sección “Nosotros”.",
